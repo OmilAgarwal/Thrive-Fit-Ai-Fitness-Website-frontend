@@ -1,0 +1,69 @@
+/* Feedback Section */
+.feedback-section {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    font-size: 1.5rem;
+}
+
+/* Feedback Container */
+.feedback-container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+/* Slider */
+.feedback-slider {
+    display: flex;
+    gap: 40px;
+    width: calc(12 * 25%);
+}
+
+/* Individual Feedback Box */
+.feedback-box {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    width: 22%;
+    height: auto;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    border: 2px solid red;
+    flex-shrink: 0;
+}
+
+/* Image */
+.feedback-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid white;
+}
+
+/* Name */
+.feedback-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+/* Rating */
+.rating {
+    color: gold;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Feedback Text */
+.feedback-box p {
+    font-size: 0.85rem;
+    margin: 0;
+    white-space: normal;
+    word-wrap: break-word;
+}

@@ -1,0 +1,97 @@
+/* Page Background */
+.community-container {
+    background: black;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30vh;
+    overflow-y: auto;
+}
+
+/* Title Styling */
+.community-title {
+    color: white;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Content Section */
+.community-content {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding-bottom: 50px;
+}
+
+/* Community Boxes */
+.community-box {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 40px;
+    border-radius: 12px;
+    color: white;
+    width: 420px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6); /* Red Glow */
+    border: 3px solid red; /* Red Border */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.community-box h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: white;
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.7); /* Red Text Glow */
+}
+
+.community-box p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+/* Hover Effect */
+.community-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.9); /* Stronger Red Glow */
+}
+
+/* Button */
+.community-button {
+    background: red; /* Red Background */
+    color: white;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover Effect: Background Darkens, Text Turns Black */
+.community-button:hover {
+    background: darkred; /* Darker Red */
+    color: black; /* Text Turns Black */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8); /* Red Glow */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .community-title {
+        font-size: 2.5rem;
+    }
+
+    .community-box {
+        width: 90%;
+    }
+
+    .community-button {
+        width: 90%;
+    }
+}

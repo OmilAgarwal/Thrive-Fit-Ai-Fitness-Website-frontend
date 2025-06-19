@@ -1,0 +1,62 @@
+/* Auth Navbar */
+.auth-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(0, 0, 0, 0.5); /* Transparent background */
+    backdrop-filter: blur(8px);
+    z-index: 100;
+  }
+  
+  /* Meta Fit Title (Replacing Logo) */
+  .auth-navbar-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+  }
+  
+  /* Navigation Links */
+  .auth-navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+  }
+  
+  .auth-navbar-links li {
+    list-style: none;
+  }
+  
+  .auth-navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .auth-navbar-links a:hover {
+    color: #ff0000;
+  }
+  
+  /* Sign Up Button */
+  .auth-navbar-signup .signup-btn {
+    text-decoration: none;
+    background: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    margin: 60px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .auth-navbar-signup .signup-btn:hover {
+    background: white;
+    color: #ff0000;
+  }
+  

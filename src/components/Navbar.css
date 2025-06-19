@@ -1,0 +1,134 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    padding: 15px 30px;
+    color: white;
+    position: fixed; /* Fix navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures navbar stays above all content */
+}
+
+/* Logo */
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+}
+
+/* Navigation Links */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links li {
+    display: inline;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.navbar-links a:hover {
+    color: red;
+}
+
+/* User Dropdown */
+.user-dropdown {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+    margin-right: 3%;
+    transform: translateX(-10px);
+}
+
+/* User Email */
+.user-email {
+    color: white;
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+/* Dropdown Icon */
+.dropdown-icon {
+    color: white;
+    font-size: 14px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: black;
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 10px 0;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menu a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.dropdown-menu a:hover {
+    background: red;
+}
+.logout-popup {
+    position: fixed;
+    top: 80px; /* Just below the navbar */
+    right: 20px; /* Aligned to the right */
+    background-color: #28a745; /* Bright green success color */
+    color: white;
+    padding: 10px 30px; /* Keeps height minimal, increases width */
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    z-index: 9999; /* Ensures it appears above other elements */
+    min-width: 280px; /* Increased width */
+    max-width: 350px; /* Ensures it doesn't get too wide */
+  }
+  
+  /* Keeps it visible for 2 seconds without fading */
+  @keyframes hidePopup {
+    0% { opacity: 1; }
+    100% { opacity: 1; }
+  }
+
+/* Logout Button Styling */
+.logout-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 50px; /* Slide a bit to the left */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-button:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+  

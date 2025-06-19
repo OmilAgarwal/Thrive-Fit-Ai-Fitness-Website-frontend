@@ -1,0 +1,291 @@
+/* Dashboard Background */
+.dashboard-container {
+  background: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Video Section */
+.video-section {
+  position: relative;
+  width: 100vw;
+  height: 73vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 485vh;
+}
+
+.dashboard-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Floating Gym Equipment Animation */
+@keyframes floatGym {
+  0%, 100% { transform: translateY(0); opacity: 0.8; }
+  50% { transform: translateY(-20px); opacity: 1; }
+}
+
+/* Floating Gym Equipment Background */
+.floating-gym-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.floating-gym {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url('gym-equipment.png') no-repeat center/cover;
+  animation: floatGym 4s infinite ease-in-out;
+}
+
+/* Floating AI Assistant */
+.ai-assistant {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 1000;
+  animation: floatAssistant 3s infinite ease-in-out;
+}
+
+@keyframes floatAssistant {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.ai-assistant img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.ai-assistant img:hover {
+  transform: scale(1.1);
+}
+
+/* Video Navigation Dots */
+.video-dots {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: gray;
+  border-radius: 50%;
+  transition: background 0.3s ease-in-out;
+}
+
+.dot.active {
+  background: white;
+}
+
+/* Content Section */
+.content-section {
+  width: 85%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 80px;
+}
+
+/* Dashboard Boxes with Slide-in Animation */
+.dashboard-box {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 50px;
+  border-radius: 12px;
+  margin-top: 60px;
+  color: white;
+  width: 420px;
+  height: 270px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+  border: 3px solid red;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.dashboard-box:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 30px rgba(255, 0, 0, 0.9);
+}
+
+/* About Us Section with Word-by-Word Animation */
+.about-section {
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 1.5rem;
+  opacity: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(40) forwards;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.about-section::after {
+  content: "";
+  display: none;
+}
+
+/* Info Sections */
+/* Info Sections - Full Width */
+.info-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* Increased gap for better spacing */
+  width: 95%; /* Expanded width to cover more of the screen */
+  max-width: 1400px; /* Prevents it from getting too wide on large screens */
+  margin: 50px auto;
+  padding: 20px; /* Added padding for better spacing */
+}
+
+/* Reverse alignment for alternating layout */
+.info-section.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Enlarged Images */
+.info-image {
+  width: 220px; /* Increased size for better visual balance */
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid red;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.7);
+  animation: floatGym 4s infinite ease-in-out;
+}
+
+/* Content Area - Adjusted for More Width */
+.info-content {
+  max-width: 750px; /* Increased width to cover more space */
+  text-align: left;
+  flex-grow: 1; /* Ensures it stretches properly */
+}
+
+/* Title Styling */
+.info-title {
+  font-size: 28px; /* Slightly larger for emphasis */
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Description Styling */
+.info-desc {
+  font-size: 22px; /* Increased font size */
+  line-height: 1.8; /* Improved readability */
+  color: white;
+  width: 100%;
+}
+
+
+/* Feedback Section */
+.feedback-section {
+  text-align: center;
+  color: white;
+  margin-top: 80px;
+  font-size: 1.5rem;
+}
+
+.feedback {
+  font-size: 1.2rem;
+  color: #ff5252;
+  font-style: italic;
+  margin-top: 20px;
+  animation: scrollFeedback 6s infinite linear;
+}
+
+@keyframes scrollFeedback {
+  0% { opacity: 0; transform: translateX(50px); }
+  50% { opacity: 1; transform: translateX(0); }
+  100% { opacity: 0; transform: translateX(-50px); }
+}
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ff0000; /* Customize color */
+  color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.chat-button:hover {
+  background-color: #ff0000;
+  transform: scale(1.1);
+}
+
+.chatbot-container {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 350px;
+  height: 500px;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dashboard-box a {
+  font-size: 1.3rem; /* Increase this value as needed */
+  color: #4632fe;
+  text-decoration: none;
+}
+
+.dashboard-box a:hover {
+  text-decoration: underline;
+}
+
+/* Progress Box */
+.progresss-box .progress-graph {
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 1.5;
+  color: white;
+}
+
+.progress-button {
+  margin-top: 20px;
+}
+
+

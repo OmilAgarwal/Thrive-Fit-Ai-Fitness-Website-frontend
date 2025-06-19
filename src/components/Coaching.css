@@ -1,0 +1,126 @@
+.coaching-container {
+    background: black;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30vh;
+    overflow-y: auto;
+}
+
+.coaching-title {
+    color: white;
+    font-size: 2.8rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.coaching-description {
+    color: #ccc;
+    font-size: 1.4rem;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 40px;
+    margin-left: 17vh;
+}
+
+.booking-box {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.6);
+    border: 3px solid red;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.booking-box h2 {
+    font-size: 2rem;
+    color: white;
+    text-shadow: 0 0 8px rgba(255, 0, 0, 0.7);
+}
+
+.booking-box p {
+    font-size: 1.2rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.coaching-button {
+    background: red;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.coaching-button:hover {
+    background: darkred;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
+
+.plans-section {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.plan-card {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    border: 2px solid red;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.plan-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
+}
+
+.plan-card h3 {
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.plan-card p {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.plan-button {
+    background: red;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.plan-button:hover {
+    background: darkred;
+    box-shadow: 0 0 8px rgba(255, 0, 0, 0.8);
+}
