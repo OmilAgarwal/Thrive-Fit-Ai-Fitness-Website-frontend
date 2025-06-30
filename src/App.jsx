@@ -15,7 +15,7 @@ import MealPlanner from "./components/MealPlanner";
 import CalorieTracking from "./components/CalorieTracking";
 import DietRecommendations from "./components/DietRecommendation" // ✅ Import Calorie Tracking
 import Coaching from "./components/Coaching";
-import Progress from "./components/Progress";
+import Progress from "./components/Progress"; //hello
 
 function App() {
   return (
