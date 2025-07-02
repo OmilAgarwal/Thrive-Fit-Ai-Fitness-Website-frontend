@@ -56,7 +56,7 @@ export default function AuthPage() {
       setError("Please fill in all fields.");
       return;
     }
-    handleAuthRequest("https://thrive-fit-ai-fitness-website-backend.onrender.com/auth", { email, password });
+    handleAuthRequest("http://localhost:5000/auth", { email, password });
   };
 
   const handleSignup = () => {
@@ -65,7 +65,7 @@ export default function AuthPage() {
       setError("Please fill in all fields.");
       return;
     }
-    handleAuthRequest("https://thrive-fit-ai-fitness-website-backend.onrender.com/signup", { name: fullName, email, password });
+    handleAuthRequest("http://localhost:5000/signup", { name: fullName, email, password });
   };
 
   return (
